@@ -1,0 +1,16 @@
+.footer {
+  background-color: #080d13;
+  text-align: center;
+  padding: 25px 15px;
+}
+
+.footer__copyright {
+  font-size: 12px;
+  line-height: 18px;
+  color: $secondary-color;
+
+  &--caption {
+    color: $third-color;
+    text-transform: uppercase;
+  }
+}
