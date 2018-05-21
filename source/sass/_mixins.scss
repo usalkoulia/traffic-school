@@ -1,0 +1,11 @@
+@mixin tablet-centering() {
+  width: 100%;
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+@mixin desktop-centering() {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+}

@@ -45,7 +45,7 @@ gulp.task("serve", function() {
 
   gulp.watch("source/sass/**/*.{scss,sass}", ["style"]);
   gulp.watch("source/*.html", ["html"]);
-  gulp.watch("source/**/*.svg", () => run("copy", "sprite", "html"));
+  gulp.watch("source/**/*.svg", () => run("copy", "html"));
   gulp.watch("source/js/**/*.js", ["copy"]);
 });
 
@@ -66,7 +66,7 @@ gulp.task("webp", function() {
 });
 
 gulp.task("build", function (done) {
-  run("clean", "copy", "picturefill", "style", "images", "webp", "sprite", "html", "compress", done);
+  run("clean", "copy", "picturefill", "style", "images", "webp", "html", "compress", done);
 });
 
 gulp.task("copy", function () {
@@ -82,25 +82,6 @@ gulp.task("copy", function () {
 
 gulp.task("clean", function () {
   return del("build");
-});
-
-gulp.task("sprite", function() {
-  return gulp.src("source/img/*.svg")
-    .pipe(imagemin([
-      imagemin.svgo({
-        plugins: [
-          {inlineStyles: {
-            onlyMatchedOnce: false,
-            removeMatchedSelectors: true,
-          }},
-        ]
-      })
-    ]))
-    .pipe(svgstore({
-      inlineSvg: true
-    }))
-    .pipe(rename("sprite.svg"))
-    .pipe(gulp.dest("build/img"));
 });
 
 gulp.task("html", function() {

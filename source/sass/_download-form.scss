@@ -1,0 +1,24 @@
+.download-form {
+  font-weight: 300;
+}
+
+.download-form__input {
+  background-color: $primary-color;
+  height: 45px;
+  width: 100%;
+  font-size: 14px;
+  color: $secondary-color;
+  text-transform: lowercase;
+  text-align: center;
+}
+
+.download-form__link {
+  color: $primary-color;
+  text-decoration: none;
+  height: 45px;
+  width: 100%;
+  font-size: 14px;
+  background-color: $third-color;
+  display: block;
+  line-height: 45px;
+}
