@@ -1,0 +1,30 @@
+.about-author {
+  text-align: center;
+  padding: 15px;
+  padding-top: 140px;
+  margin-bottom: 80px;
+}
+
+.about-author__wrapper {
+  border: 3px solid $third-color;
+  padding: 115px 15px 70px 15px;
+  position: relative;
+}
+
+.about-author__image {
+  position: absolute;
+  top: -150px;
+  left: calc(50% - 92px);
+}
+
+.about-author__title {
+  margin-bottom: 15px;
+}
+
+.about-author__text {
+  font-size: 14px;
+  line-height: 18px;
+  color: $secondary-color;
+  font-weight: 300;
+  margin-bottom: 40px;
+}
