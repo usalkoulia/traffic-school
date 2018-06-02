@@ -29,3 +29,49 @@
   font-weight: 300;
   margin-bottom: 40px;
 }
+
+@media (min-width: $tablet-min-width) {
+  .about-author {
+    padding-top: 15px;
+    margin-bottom: 120px;
+  }
+
+  .about-author__centering {
+    @include tablet-centering;
+  }
+
+  .about-author__wrapper {
+    margin-left: 140px;
+    min-height: 495px;
+    padding-left: 170px;
+    padding-right: 70px;
+    text-align: left;
+  }
+
+  .about-author__image {
+    height: 360px;
+    width: 280px;
+    left: -141px;
+    top: 60px;
+  }
+
+  .about-author__title {
+    margin-bottom: 40px;
+    position: relative;
+  }
+
+  .about-author__title::after {
+    content: "";
+    position: absolute;
+    width: 300px;
+    height: 2px;
+    background-color: $primary-color;
+    bottom: -20px;
+    left: -105px;
+    opacity: 0.1;
+  }
+
+  .about-author__text {
+    margin-bottom: 25px;
+  }
+}

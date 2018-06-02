@@ -43,3 +43,24 @@
   line-height: 20px;
   text-transform: lowercase;
 }
+
+@media (min-width: $tablet-min-width) {
+  .advantages__centering {
+    @include tablet-centering;
+  }
+
+  .advantages__list {
+    flex-direction: row;
+  }
+
+  .advantages__item {
+    text-align: left;
+    width: 220px;
+    background-position: top left;
+    padding-left: 0;
+
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+}

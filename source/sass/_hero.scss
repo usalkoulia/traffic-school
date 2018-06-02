@@ -1,7 +1,7 @@
 .hero {
   padding: 15px;
   text-align: center;
-  height: 565px;
+  min-height: 565px;
   display: flex;
   flex-direction: column;
   background-image: url("../img/bg-tablet.png");
@@ -12,11 +12,13 @@
 }
 
 .hero__centering {
-  min-height: 455px;
+  min-height: 530px;
   background-image: url("../img/scrins-mobile.png");
   background-repeat: no-repeat;
   background-size: auto;
-  background-position: center 85%;
+  background-position: center 63%;
+  display: flex;
+  flex-direction: column;
 }
 
 .hero__title {
@@ -29,4 +31,24 @@
 
 .hero__form {
   margin-top: auto;
+}
+
+@media (min-width: $tablet-min-width) {
+  .hero {
+    min-height: 420px;
+  }
+
+  .hero__centering {
+    @include tablet-centering;
+    padding-right: 312px;
+    background-image: url("../img/scrins.png");
+    background-size: 290px;
+    background-position: 475px center;
+    text-align: left;
+    min-height: 255px;
+  }
+
+  .hero__text {
+    padding: 0;
+  }
 }

@@ -84,3 +84,30 @@
 .features__item--five::after {
   content: "5";
 }
+
+@media (min-width: $tablet-min-width) {
+  // .features {
+  //   background-color: pink;
+  // }
+
+  .features__centering {
+    @include tablet-centering;
+    background-color: pink;
+  }
+
+  .features__title {
+    padding-left: 0;
+  }
+
+  .features__title::before {
+    left: -65px;
+  }
+
+  .features__title::after {
+    left: -45px;
+  }
+
+  .features__list {
+    padding-left: 65px;
+  }
+}

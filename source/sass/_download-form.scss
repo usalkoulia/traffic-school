@@ -1,5 +1,6 @@
 .download-form {
   font-weight: 300;
+  text-align: center;
 }
 
 .download-form__input {
@@ -22,4 +23,18 @@
   background-color: $third-color;
   display: block;
   line-height: 45px;
+}
+
+@media (min-width: $tablet-min-width) {
+  .download-form {
+    display: flex;
+  }
+
+  .download-form__input {
+    width: 212px;
+  }
+
+  .download-form__link {
+    width: 196px;
+  }
 }

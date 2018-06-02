@@ -10,3 +10,10 @@
   font-size: 14px;
   font-weight: 300;
 }
+
+@media (min-width: $tablet-min-width) {
+  .title {
+    font-size: 28px;
+    letter-spacing: 0.05em;
+  }
+}
