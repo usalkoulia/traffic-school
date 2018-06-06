@@ -73,5 +73,35 @@
 
   .about-author__text {
     margin-bottom: 25px;
+    width: 250px;
+  }
+}
+
+@media (min-width: $desktop-min-width) {
+  .about-author__centering {
+    @include desktop-centering;
+  }
+
+  .about-author__wrapper {
+    width: 736px;
+    height: 600px;
+    margin-left: 293px;
+    padding-left: 265px;
+  }
+
+  .about-author__image {
+    height: 476px;
+    width: 369px;
+    left: -183px;
+  }
+
+  .about-author__title::after {
+    width: 400px;
+    bottom: -10px;
+    left: -185px;
+  }
+
+  .about-author__text {
+    margin-bottom: 50px;
   }
 }

@@ -3,7 +3,17 @@
 }
 
 @media (min-width: $tablet-min-width) {
+  .header {
+    padding: 60px 15px 35px 15px;
+  }
+
   .header__centering {
     @include tablet-centering;
+  }
+}
+
+@media (min-width: $desktop-min-width) {
+  .header__centering {
+    @include desktop-centering;
   }
 }

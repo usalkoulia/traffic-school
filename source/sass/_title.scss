@@ -1,6 +1,6 @@
 .title {
   font-size: 20px;
-  line-height: 30px;
+  line-height: 33px;
   text-transform: uppercase;
   font-weight: 400;
 }
@@ -15,5 +15,12 @@
   .title {
     font-size: 28px;
     letter-spacing: 0.05em;
+  }
+}
+
+@media (min-width: $desktop-min-width) {
+  .title {
+    font-size: 40px;
+    line-height: 52px;
   }
 }

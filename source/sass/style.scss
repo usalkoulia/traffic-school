@@ -12,10 +12,15 @@
 @import "download";
 @import "footer";
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   background-color: #0b1119;
   color: #ffffff;
+  overflow-x: hidden;
 }
 
 img {

@@ -38,3 +38,13 @@
     width: 196px;
   }
 }
+
+@media (min-width: $desktop-min-width) {
+  .download-form__input {
+    width: 374px;
+  }
+
+  .download-form__link {
+    width: 196px;
+  }
+}
