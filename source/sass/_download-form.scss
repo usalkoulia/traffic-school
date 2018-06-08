@@ -30,21 +30,13 @@
     display: flex;
   }
 
-  .download-form__input {
-    width: 212px;
-  }
-
+  .download-form__input,
   .download-form__link {
-    width: 196px;
+    height: 54px;
+    line-height: 54px;
   }
 }
 
-@media (min-width: $desktop-min-width) {
-  .download-form__input {
-    width: 374px;
-  }
-
-  .download-form__link {
-    width: 196px;
-  }
-}
+// @media (min-width: $desktop-min-width) {
+//
+// }

@@ -14,3 +14,10 @@
     text-transform: uppercase;
   }
 }
+
+@media (min-width: $tablet-min-width) {
+  .footer__copyright {
+    font-size: 14px;
+    line-height: 24px;
+  }
+}

@@ -28,12 +28,48 @@
   position: absolute;
   height: 2px;
   background-color: #ffffff;
-  opacity: 0.3;
+  opacity: 0.1;
   bottom: -20px;
-  left: 50px;
-  right: 50px;
+  left: calc(50% - 100px);
+  width: 200px;
+}
+
+.download__text {
+  margin-bottom: 20px;
 }
 
 .download__form {
   margin-bottom: 80px;
+  margin: 0 auto;
+  width: 290px;
+  max-width: 300px;
+}
+
+@media (min-width: $tablet-min-width) {
+  .download__form {
+    width: 570px;
+    max-width: 100%;
+  }
+
+  .download__input {
+    width: 374px;
+  }
+
+  .download__link {
+    width: 196px;
+  }
+}
+
+@media (min-width: $desktop-min-width) {
+  .download__bonus {
+    font-size: 18px;
+  }
+
+  .download__bonus {
+    margin-bottom: 80px;
+  }
+
+  .download__bonus::after {
+    bottom: -40px;
+  }
 }

@@ -24,8 +24,8 @@
           <p class="hero__text text">Получи бесплатный видеокурс<br> по товарному арбитражу для новичков</p>
           <form class="hero__form download-form" action="index.html" method="post">
             <label class="visually-hidden" for="download-input">Электронная почта</label>
-            <input class="download-form__input" type="email" name="email" placeholder="Введите ваш e-mail" id="download-input">
-            <a class="download-form__link" href="#">Скачать видео курс</a>
+            <input class="hero__input download-form__input" type="email" name="email" placeholder="Введите ваш e-mail" id="download-input">
+            <a class="hero__link download-form__link" href="#">Скачать видео курс</a>
           </form>
         </div>
       </section>
@@ -78,14 +78,29 @@
         <div class="download__centering">
           <h2 class="download__title title">Скачай видеокурс сейчас</h2>
           <p class="download__bonus">И получи крутой бонус совершенно бесплатно!</p>
-          <p class="text">Предложение ограничено! Успей!</p>
+          <p class="download__text text">Предложение ограничено! Успей!</p>
           <div class="timer">
-            <!-- WTF -->
+            <dl class="">
+              <dt class="timer__item" id="days"></dt>
+              <dd class="timer__text">Дней</dd>
+            </dl>
+            <dl class="">
+              <dt class="timer__item" id="hours"></dt>
+              <dd class="timer__text">Часов</dd>
+            </dl>
+            <dl class="">
+              <dt class="timer__item" id="minutes"></dt>
+              <dd class="timer__text">Минут</dd>
+            </dl>
+            <dl class="">
+              <dt class="timer__item" id="seconds"></dt>
+              <dd class="timer__text">Секунд</dd>
+            </dl>
           </div>
           <form class="download__form download-form" action="index.html" method="post">
             <label class="visually-hidden" for="download-input">Электронная почта</label>
-            <input class="download-form__input" type="email" name="email" placeholder="введите ваш e-mail" id="download-input">
-            <a class="download-form__link" href="#">Скачать видео курс</a>
+            <input class="download__input download-form__input" type="email" name="email" placeholder="введите ваш e-mail" id="download-input">
+            <a class="download__link download-form__link" href="#">Скачать видео курс</a>
           </form>
         </div>
       </section>
@@ -96,5 +111,6 @@
         <p class="footer__copyright"><span class="footer__copyright--caption">“ШКОЛА ТРАФИКА"</span> - школа товарного арбитража трафика Артура Гарнаева (с) 2016</p>
       </div>
     </footer>
+    <script src="js/main.js"></script>
   </body>
 </html>

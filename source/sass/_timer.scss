@@ -1,0 +1,41 @@
+.timer {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 40px;
+  width: 290px;
+  margin: 0 auto;
+}
+
+.timer__item {
+  height: 55px;
+  width: 55px;
+  font-size: 32px;
+  border-bottom: 1px solid #ffffff;
+  margin-bottom: 10px;
+}
+
+.timer__text {
+  font-size: 12px;
+  line-height: 13px;
+  text-transform: lowercase;
+  color: $secondary-color;
+}
+
+@media (min-width: $desktop-min-width) {
+  .timer {
+    width: 570px;
+  }
+
+  .timer__item {
+    font-size: 60px;
+    line-height: 120px;
+    width: 120px;
+    height: 120px;
+    margin-bottom: 15px;
+  }
+
+  .timer__text {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}

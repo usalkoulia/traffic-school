@@ -16,6 +16,7 @@
   display: flex;
   flex-direction: column;
   position: relative;
+  align-items: center;
 }
 
 .hero__centering::before {
@@ -41,6 +42,8 @@
 
 .hero__form {
   margin-top: auto;
+  width: 290px;
+  max-width: 300px;
 }
 
 @media (min-width: $tablet-min-width) {
@@ -57,6 +60,7 @@
     background-position: 432px center;
     text-align: left;
     min-height: 300px;
+    align-items: flex-start;
   }
 
   .hero__centering::before {
@@ -69,6 +73,19 @@
 
   .hero__text {
     padding: 0;
+  }
+
+  .hero__form {
+    width: 408px;
+    max-width: 100%;
+  }
+
+  .hero__input {
+    width: 212px;
+  }
+
+  .hero__link {
+    width: 196px;
   }
 }
 
@@ -101,5 +118,13 @@
 
   .hero__text {
     margin-bottom: 70px;
+  }
+
+  .hero__form {
+    width: 570px;
+  }
+
+  .hero__input {
+    width: 374px;
   }
 }
