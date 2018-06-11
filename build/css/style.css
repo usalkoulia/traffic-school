@@ -183,7 +183,8 @@
   color: #bdbdbd;
   text-transform: lowercase;
   text-align: center;
-  border: none; }
+  border: none;
+  border-radius: 0; }
 
 .download-form__submit {
   color: #ffffff;
