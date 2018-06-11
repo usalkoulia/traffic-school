@@ -53,7 +53,13 @@
       <section class="about-author">
         <div class="about-author__centering">
           <div class="about-author__wrapper">
-            <img class="about-author__image" src="img/photo-mobile.jpg" alt="Автор видеокурса Артур Гарнаев" height="239" width="185">
+            <picture>
+              <source type="image/webp" media="(min-width: 720px)" srcset="img/photo-tablet.webp">
+              <source type="image/webp" srcset="img/photo-mobile.webp">
+
+              <source media="(min-width: 720px)" srcset="img/photo-tablet.jpg">
+              <img class="about-author__image" src="img/photo-mobile.jpg" width="185" height="239" alt="Автор видеокурса Артур Гарнаев">
+            </picture>
             <h2 class="about-author__title title"><span class="title__caption">Автор видеокурса</span><br>Артур Гарнаев</h2>
             <p class="about-author__text">Арбитражник, рекламодатель, интернет-предпрениматель</p>
             <p class="text">Прокрутил рекламы более чем на 50000$ Ежедневно продаю более 150 физический товаров притом, что трафик на рекламу лью сам!</p>

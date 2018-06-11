@@ -12,6 +12,26 @@
   font-size: 32px;
   border-bottom: 1px solid #ffffff;
   margin-bottom: 10px;
+  position: relative;
+}
+
+.timer__item:not(:nth-last-child(4))::before,
+.timer__item:not(:nth-last-child(4))::after {
+  content: "";
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: red;
+  position: absolute;
+  left: 65px;
+}
+
+.timer__item:not(:nth-last-child(4))::before {
+  top: 15px;
+}
+
+.timer__item:not(:nth-last-child(4))::after {
+  top: 32px;
 }
 
 .timer__text {
@@ -19,6 +39,22 @@
   line-height: 13px;
   text-transform: lowercase;
   color: $secondary-color;
+}
+
+@media (min-width: $tablet-min-width) {
+  .timer__item::before,
+  .timer__item::after {
+    width: 6px;
+    height: 6px;
+  }
+
+  .timer__item::before {
+    top: 13px;
+  }
+
+  .timer__item::after {
+    top: 30px;
+  }
 }
 
 @media (min-width: $desktop-min-width) {
