@@ -15,8 +15,8 @@
   position: relative;
 }
 
-.timer__item:not(:nth-last-child(4))::before,
-.timer__item:not(:nth-last-child(4))::after {
+.timer__item:not(:last-of-type)::before,
+.timer__item:not(:last-of-type)::after {
   content: "";
   width: 4px;
   height: 4px;
@@ -26,11 +26,11 @@
   left: 65px;
 }
 
-.timer__item:not(:nth-last-child(4))::before {
+.timer__item:not(:last-of-type)::before {
   top: 15px;
 }
 
-.timer__item:not(:nth-last-child(4))::after {
+.timer__item:not(:last-of-type)::after {
   top: 32px;
 }
 
