@@ -15,22 +15,23 @@
   position: relative;
 }
 
-.timer__item:not(:last-of-type)::before,
-.timer__item:not(:last-of-type)::after {
+.timer__wrapper:not(:last-child) .timer__item::before,
+.timer__wrapper:not(:last-child) .timer__item::after {
   content: "";
+  background-color: $primary-color;
+  opacity: 0.2;
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background-color: red;
   position: absolute;
   left: 65px;
 }
 
-.timer__item:not(:last-of-type)::before {
+.timer__wrapper:not(:last-child) .timer__item::before {
   top: 15px;
 }
 
-.timer__item:not(:last-of-type)::after {
+.timer__wrapper:not(:last-child) .timer__item::after {
   top: 32px;
 }
 
@@ -42,22 +43,13 @@
 }
 
 @media (min-width: $tablet-min-width) {
-  .timer__item::before,
-  .timer__item::after {
-    width: 6px;
-    height: 6px;
-  }
-
-  .timer__item::before {
-    top: 13px;
-  }
-
-  .timer__item::after {
-    top: 30px;
+  .timer__text {
+    font-size: 16px;
+    line-height: 24px;
   }
 }
 
-@media (min-width: $desktop-min-width) {
+@media (min-width: $tablet-min-width) {
   .timer {
     width: 570px;
   }
@@ -68,6 +60,21 @@
     width: 120px;
     height: 120px;
     margin-bottom: 15px;
+  }
+
+  .timer__wrapper:not(:last-child) .timer__item::before,
+  .timer__wrapper:not(:last-child) .timer__item::after {
+    width: 6px;
+    height: 6px;
+    left: 133px;
+  }
+
+  .timer__wrapper:not(:last-child) .timer__item::before {
+    top: 50px;
+  }
+
+  .timer__wrapper:not(:last-child) .timer__item::after {
+    top: 75px;
   }
 
   .timer__text {

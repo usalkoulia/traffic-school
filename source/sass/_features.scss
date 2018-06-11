@@ -47,8 +47,7 @@
   height: 28px;
   box-shadow: inset 0 0 0 9px white;
   border-radius: 50%;
-  // border: 6px solid #3c4147;
-  border: 6px solid rgba(60, 65, 71, .8);
+  border: 6px solid rgba(60, 65, 71, 0.8);
   top: 15px;
   left: 10px;
   background-clip: padding-box;
@@ -129,8 +128,7 @@
       left: 0;
       right: 0;
       top: 200px;
-      background-image:
-      linear-gradient(rgba(255, 255, 255, .1) .1em, transparent .1em);
+      background-image: linear-gradient(rgba(255, 255, 255, 0.1) 0.1em, transparent 0.1em);
       background-size: 100% 6.4em;
     }
   }

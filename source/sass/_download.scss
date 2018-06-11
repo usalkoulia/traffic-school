@@ -39,8 +39,8 @@
 }
 
 .download__form {
-  margin-bottom: 80px;
   margin: 0 auto;
+  padding-bottom: 80px;
   width: 290px;
   max-width: 300px;
 }
@@ -63,9 +63,6 @@
 @media (min-width: $desktop-min-width) {
   .download__bonus {
     font-size: 18px;
-  }
-
-  .download__bonus {
     margin-bottom: 80px;
   }
 

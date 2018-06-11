@@ -30,6 +30,7 @@
   height: 507px;
   top: 45px;
   left: calc(50% - 258px);
+  z-index: -1;
 }
 
 .hero__title {
@@ -96,7 +97,7 @@
 
   .hero__centering {
     @include desktop-centering;
-    padding-right: 0;
+    padding-right: 500px;
     padding-bottom: 100px;
     padding-top: 50px;
     background-size: 560px;
